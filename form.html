@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Custon CSS StyleSheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -24,40 +25,76 @@
             </ul>
         </nav>
     </header>
-    <form action="">
-        <p>Name: <input type="text" name="name" placeholder="Enter your name" id=""></p>
-        <p>Email: <input type="text" name="email" placeholder="Enter your Email" id=""></p>
-        <fieldset>
-            <legend>Select your pitha</legend>
-            <p>
-                <label for="chitoy">
-                    <input type="radio" name="pitha" id="chitoy">Chitoy
-                </label>
-            </p>
-            <p>
-                <label for="vapa">
-                    <input type="radio" name="pitha" id="vapa">Vapa
-                </label>
-            </p>
-            <p>
-                <label for="tell">
-                    <input type="radio" name="pitha" id="tell">Tell er pitha
-                </label>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>select your vorta</legend>
-            <p><label for="sorisa"><input type="checkbox" name="vorta" id="sorisa">Sorisa</label></p>
-            <p><label for="shutki"><input type="checkbox" name="vorta" id="shutki">Shutki</label></p>
-            <p><label for="begun"><input type="checkbox" name="vorta" id="begun">Begun</label></p>
-        </fieldset>
-        <p>Special Instruction
-            <br>
-            <textarea name="instruction" id="" cols="30" rows="10"></textarea>
-        </p>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
+    <main>
+        <h1 class="header">Order Detail of Customers:</h1>
+        <section class="customer-detail">
+            <form action="">
+                <p>Name: <input type="text" name="name" placeholder="Enter your name" id=""></p>
+                <br>
+                <p>Email: <input type="text" name="email" placeholder="Enter your Email" id=""></p>
+                <br>
+                <p>Password: <input type="password" name="password" placeholder="Enter your Password" id=""></p>
+                <br>
+                <p>Delivary Date: <input type="datetime-local" name="" id=""></p>
+                <br>
+                <fieldset>
+                    <legend>Select Your Food</legend>
+                    <br>
+                    <p>
+                        <label for="pasta">
+                            <input type="radio" name="food" id="pasta">PASTA
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="Breakfast">
+                            <input type="radio" name="food" id="break-fast">BREAK-FAST
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="fruits">
+                            <input type="radio" name="food" id="tell">Fruits
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="burger">
+                            <input type="radio" name="food" id="burger">Burger
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="pizza">
+                            <input type="radio" name="pitha" idpizza">PIZZA
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="sandwich">
+                            <input type="radio" name="pitha" id="sandwich">SANDWITCH
+                         </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Your Item</legend>
+                    <p><label for="juice"><input type="checkbox" name="drinks" id="juice">Frsh Juice</label></p>
+                    <br>
+                    <p><label for="water"><input type="checkbox" name="drinks" id="water">Water</label></p>
+                    <br>
+                    <p><label for="drinks"><input type="checkbox" name="drinks" id="begun"> Cold Drinks</label></p>
+                    <br>
+                </fieldset>
+                <p>Special Instruction
+                    <br>
+                    <textarea name="instruction" id="" cols="30" rows="10"></textarea>
+                </p>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
